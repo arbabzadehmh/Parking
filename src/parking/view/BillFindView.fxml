@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parking.view.BillFindViewController">
+   <children>
+      <TableView fx:id="billEditTbl" layoutX="442.0" layoutY="108.0" prefHeight="257.0" prefWidth="382.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <TableView fx:id="billTbl" layoutX="442.0" layoutY="108.0" prefHeight="257.0" prefWidth="382.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bb3d3d" height="34.0" layoutX="69.0" layoutY="46.0" strokeType="INSIDE" width="312.0">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <GridPane layoutX="69.0" layoutY="102.0" prefHeight="271.0" prefWidth="236.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Bill ID" />
+            <Label fx:id="numberLbl" text="Car Number" GridPane.rowIndex="1" />
+            <Label fx:id="timeLbl" text="Exit Time" GridPane.rowIndex="3" />
+            <TextField fx:id="idFindTxt" prefHeight="34.0" prefWidth="118.0" promptText="Enter ID" GridPane.columnIndex="1" />
+            <TextField fx:id="numberFindTxt" prefHeight="33.0" prefWidth="118.0" promptText="Enter Car Number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="exitTimeFindDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="hourCmb" prefHeight="31.0" prefWidth="101.0" promptText="hour" GridPane.rowIndex="4" />
+            <ComboBox fx:id="minCmb" prefHeight="31.0" prefWidth="119.0" promptText="minute" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="entIdLbl" text="Entrance ID" GridPane.rowIndex="2" />
+            <Label fx:id="delLbl" text="Deleted" GridPane.rowIndex="5" />
+            <ComboBox fx:id="delCmb" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="entIdTxt" promptText="Enter Entrance ID" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label layoutX="203.0" layoutY="40.0" prefHeight="45.0" prefWidth="52.0" text="Bill" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="322.0" layoutY="108.0" prefHeight="175.0" prefWidth="60.0" spacing="15.0">
+         <children>
+            <Button fx:id="billIdFindBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Find" />
+            <Button fx:id="numberFindBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Find" />
+            <Button fx:id="entIdFindBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Find" />
+         </children>
+      </VBox>
+      <Button fx:id="editBtn" layoutX="69.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="101.0" text="Edit" />
+      <Button fx:id="clearBtn" layoutX="322.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Clear" />
+      <Button fx:id="exitBtn" layoutX="756.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Exit" />
+      <Button fx:id="backBtn" layoutX="677.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Back" />
+      <Button fx:id="exitTimeFindBtn" layoutX="322.0" layoutY="247.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="60.0" text="Find" />
+      <Label layoutX="442.0" layoutY="45.0" text="User :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLbl" layoutX="516.0" layoutY="46.0" text="username">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="findAllBtn" layoutX="187.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Find All" />
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parking.view.ParkingAboutViewController">
+   <children>
+      <Button fx:id="backBtn" layoutX="489.0" layoutY="353.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="61.0" text="Back" />
+      <Label layoutX="71.0" layoutY="59.0" text="Parking Bill">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="251.0" prefHeight="27.0" prefWidth="407.0" text="Powered By Mohammad Hossein Arbabzadeh">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="290.0" text="Phone Number : 09124092537">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="290.0" text="arbabzadeh.mh@gmail.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="213.0" prefHeight="27.0" prefWidth="407.0" text="Built On 01.01.2024">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="177.0" prefHeight="27.0" prefWidth="407.0" text="Version 1.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

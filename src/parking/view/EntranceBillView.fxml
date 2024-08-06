@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parking.view.EntranceBillViewController">
+   <children>
+      <GridPane layoutX="69.0" layoutY="126.0" prefHeight="229.0" prefWidth="236.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Car Number" />
+            <Label text="Parking Spot" GridPane.rowIndex="2" />
+            <TextField fx:id="carNumberTxt" prefHeight="33.0" prefWidth="118.0" promptText="Enter Car Number" GridPane.columnIndex="1">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="spotCmb" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="vipTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="VIP Car" GridPane.rowIndex="1" />
+            <Label fx:id="generalLbl" text="General Capacity" GridPane.rowIndex="3" />
+            <Label fx:id="vipCapacityLbl" text="VIP Capacity" GridPane.rowIndex="4" />
+            <TextField fx:id="generalCapacityTxt" editable="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="vipCapacityTxt" editable="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label layoutX="104.0" layoutY="49.0" prefHeight="45.0" prefWidth="131.0" text="Entrance">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Circle fill="#72a782" layoutX="242.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Circle fill="#72a782" layoutX="298.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Circle fill="#72a782" layoutX="271.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#72a882" height="31.0" layoutX="-3.0" layoutY="56.0" strokeType="INSIDE" width="94.0">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bc3e3e" height="31.0" layoutX="664.0" layoutY="56.0" strokeType="INSIDE" width="94.0">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <Circle fill="#bb3d3d" layoutX="434.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Circle fill="#bb3d3d" layoutX="490.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Circle fill="#bb3d3d" layoutX="463.0" layoutY="78.0" radius="7.0" strokeType="INSIDE">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.15853658536585363">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Circle>
+      <Label layoutX="513.0" layoutY="49.0" prefHeight="45.0" prefWidth="131.0" text="Exit &amp; Bill">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="436.0" layoutY="126.0" prefHeight="229.0" prefWidth="236.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Entrance ID" />
+            <Label text="Cost" GridPane.rowIndex="5" />
+            <TextField fx:id="entIdTxt" prefHeight="33.0" prefWidth="118.0" promptText="Enter Entrance ID" GridPane.columnIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="costTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Car Number" GridPane.rowIndex="1" />
+            <Label text="VIP Car" GridPane.rowIndex="2" />
+            <Label text="Parking Spot" GridPane.rowIndex="3" />
+            <Label text="Entrance Time" GridPane.rowIndex="4" />
+            <TextField fx:id="billCNTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="billvipTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="spotTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="entTimeTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="entranceSaveBtn" layoutX="69.0" layoutY="391.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="236.0" text="Save" />
+      <Button fx:id="billSaveBtn" layoutX="436.0" layoutY="391.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="236.0" text="Save" />
+      <Button fx:id="exitBtn" layoutX="596.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Exit" />
+      <Button fx:id="backBtn" layoutX="517.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Back" />
+      <Label layoutX="69.0" layoutY="459.0" text="User :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="clearBtn" layoutX="437.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" text="Clear" />
+      <Label fx:id="userLbl" layoutX="155.0" layoutY="459.0" text="username">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
